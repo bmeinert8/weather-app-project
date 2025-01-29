@@ -6,10 +6,18 @@
   <title>Responsive Weather App</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/queries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
-    <section id="search-bar" class="search-bar"></section>
+    <section id="search-bar" class="search-bar">
+      <input type="text" class="search-input" placeholder="City, State, Country, or Zip Code">
+      <button class="search-button">
+        <img src="./images/search-icon.svg" alt="search icon">
+      </button>
+    </section>
     <section id="current-conditions" class="current-conditions"></section>
     <nav id="button-nav" class="button-nav"></nav>
     <section id="week-conditions" class="week-conditions"></section>

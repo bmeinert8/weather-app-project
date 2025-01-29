@@ -83,3 +83,70 @@ h1, h2, h3, h4, h5, h6 {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+/* Current Conditions Section */
+.location, .location-conditions-container, .location-conditions-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.location {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.location-city {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cordinates {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.6rem;
+}
+
+.location-conditions-container {
+  gap: 2rem;
+}
+
+.location-temp {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.location-forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.temp-low, .temp-high {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.temp-low {
+  opacity: 0.7;
+}
+
+.location-conditions-text {
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.location-condition-primary {
+  font-weight: 700;
+}
+
+.location-condition-secondary, .location-condition-3rd {
+  font-weight: 400;
+}
+
+.location-condition-3rd {
+  opacity: 0.7;
+}

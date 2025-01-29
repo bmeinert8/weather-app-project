@@ -83,3 +83,24 @@ h1, h2, h3, h4, h5, h6 {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+/* Current Conditions Section */
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.location-city {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cordinates {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.6rem;
+}

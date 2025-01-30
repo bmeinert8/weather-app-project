@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.3rem;
+  gap: 1rem;
   margin-top: 6rem;
 }
 
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: 25px;
+  padding: 10px;
   border-radius: 50%;
 }
 

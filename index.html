@@ -6,8 +6,10 @@
   <title>Responsive Weather App</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/queries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,9 +20,10 @@
         <label for="search-input">Enter a new location</label>
         <input type="text" id="search-input" class="search-input" role="searchbox" size="40" autocomplete="off" placeholder="City, State, Country">
         <button id="search-button" class="search-button" title="Submit Location" aria-label="Enter Zip Code or City, State, and Country to retrive weather conditions">
-      </form>
         <img src="./images/search-icon.svg" alt="search icon">
       </button>
+    </form>
+    <a href="#current-conditions" class="skip-link">Skip to Current Conditions</a>
     </section>
     <section id="current-conditions" class="current-conditions">
       <div class="location">
@@ -35,7 +38,7 @@
           <p>37°</p>
         </div>
         <div class="location-forecast">
-          <img src="images/cloud.svg" alt="current weather condition icon">
+          <i class="fa-sharp-duotone fa-solid fa-sun fa-spin"></i>
           <p class="temp-high"> High: 37°</p>
           <p class="temp-low"> Low: 26°</p>
         </div>

@@ -92,6 +92,10 @@ label {
   border-bottom-right-radius: 20px;
 }
 
+.skip-link {
+  display: none;
+}
+
 /* Current Conditions Section */
 .location, .location-conditions-container, .location-conditions-text {
   display: flex;

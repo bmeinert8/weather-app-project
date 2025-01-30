@@ -50,11 +50,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Search Bar Section */
-.search-bar {
+h1 {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+.search-bar-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   gap: 0;
 }
 

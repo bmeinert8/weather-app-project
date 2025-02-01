@@ -25,7 +25,8 @@
     </form>
     <a href="#current-conditions" class="skip-link">Skip to Current Conditions</a>
     </section>
-    <section id="current-conditions" class="current-conditions">
+    <section id="current-conditions" class="current-conditions" role="region" aria-labelledby="current-forecast">
+      <h2 id="current-forecast" class="current-forecast">Current Conditions</h2>
       <div class="location">
         <p class="location-city">North Ridgeville, OH</p>
         <div class="cordinates">
@@ -49,16 +50,28 @@
         <p class="location-condition-3rd">Humidity 68%</p>
         <p class="location-condition-3rd">Wind 20mph</p>
       </div>
+      <a href="#week-conditions" class="skip-link">Skip to Week Conditions</a>
     </section>
     <nav id="button-nav" class="button-nav">
-      <button class="nav-item"><img src="./images/icons8-home.svg" alt="Home icon by Icons8"></button>
-      <button class="nav-item"><img src="./images/icons8-home.svg" alt="Home icon by Icons8"></button>
-      <button class="nav-item"><img src="./images/icons8-home.svg" alt="Home icon by Icons8"></button>
-      <button class="nav-item"><img src="./images/icons8-home.svg" alt="Home icon by Icons8"></button>
-      <button class="nav-item"><img src="./images/icons8-home.svg" alt="Home icon by Icons8"></button>
+      <button id="location-button" class="nav-item" title="Get Location" aria-label="button to get the current location">
+        <i class="fa-solid fa-location-crosshairs"></i>
+      </button>
+      <button id="home-button" class="nav-item"  title="Home weather" aria-label="button to set the home location">
+        <i class="fa-solid fa-house"></i>
+      </button>
+      <button id="save-button" class="nav-item" title="Save-Location" aria-label="button to save a location as the home location">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+      <button id="change-unit-button" class="nav-item" title="Toggle Measurement Units" aria-label="change unit between imperial and metric">
+        <i class="fa-solid fa-code-compare"></i>
+      </button>
+      <button id="refresh-button" class="nav-item" title="Refresh weather" aria-label="button to refresh the current weather conditions">
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </button>
     </nav>
-    <section id="week-conditions" class="week-conditions">
-      <hr>
+    <hr>
+    <section id="week-conditions" class="week-conditions" roles="region" aria-labelledby="6-day-forecast-title">
+      <h2 id="6-day-forecast-title" class="6-day-forecast-title">Six Day Forecast</h2>
       <div class="week-conditions-container">
         <div class="daily-forecast">
           <p class="week-day">Sun</p>
@@ -98,6 +111,7 @@
         </div>
       </div>
     </section>
+    <p id="confirmation" class="offscreen" aria-live="assertive"></p>
   </main>
   
   <script src="./javascript/main.js"></script>

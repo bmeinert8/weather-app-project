@@ -49,15 +49,11 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+.offscreen {
+  display: none;
+}
+
 /* Search Bar Section */
-h1 {
-  display: none;
-}
-
-label {
-  display: none;
-}
-
 .search-bar-form {
   display: flex;
   justify-content: center;
@@ -92,9 +88,6 @@ label {
   border-bottom-right-radius: 20px;
 }
 
-.skip-link {
-  display: none;
-}
 
 /* Current Conditions Section */
 .location, .location-conditions-container, .location-conditions-text {
@@ -193,6 +186,7 @@ label {
 }
 
 hr {
+  margin: 1.5rem auto;
   border: 1px solid white;
   width: 90%;
 }
